@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inscription — MARCHE OU CRÈVE — 28.11.2026</title>
+<meta name="description" content="Inscrivez-vous à MARCHE OU CRÈVE, 20 places maximum. Forêt de Chevreuse (78), 28 novembre 2026, départ 10h00.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@700;900&family=Anton&family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo">MARCHE<span class="logo-bar">/</span>CRÈVE</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="index.html#concept">Le concept</a>
+      <a href="index.html#format">Format</a>
+      <a href="index.html#regles">Règles</a>
+      <a href="index.html#infos">Infos</a>
+    </nav>
+    <a href="index.html" class="btn btn-nav">Retour au site</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ EN-TÊTE ============ -->
+  <section class="form-page-header">
+    <p class="eyebrow">Engagement — 20 places maximum</p>
+    <h1 class="form-page-title">Inscription</h1>
+    <p class="form-page-sub">28 novembre 2026 — Forêt de Chevreuse (78) — départ 10h00.<br>
+      En vous inscrivant, vous acceptez de courir selon une seule règle : <strong>s'arrêter, c'est être éliminé.</strong></p>
+  </section>
+
+  <!-- ============ FORMULAIRE ============ -->
+  <div class="form-wrap">
+    <form id="reg-form" class="reg-form" autocomplete="on">
+
+      <!-- Configuration Web3Forms : remplacez la valeur ci-dessous par votre clé d'accès -->
+      <input type="hidden" name="access_key" value="c7cb8295-d2cc-4a6d-8acb-44cd66625147">
+      <input type="hidden" name="subject" value="Nouvelle inscription — MARCHE OU CRÈVE">
+      <input type="hidden" name="from_name" value="Site MARCHE OU CRÈVE">
+      <!-- Champ anti-spam (honeypot) : doit rester vide, ne pas supprimer -->
+      <input type="checkbox" name="botcheck" class="form-hidden-honeypot" tabindex="-1" autocomplete="off">
+
+      <div class="form-row">
+        <div class="field">
+          <label for="prenom">Prénom</label>
+          <input type="text" id="prenom" name="Prénom" placeholder="Jean" required>
+        </div>
+        <div class="field">
+          <label for="nom">Nom</label>
+          <input type="text" id="nom" name="Nom" placeholder="Dupont" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="Email" placeholder="vous@exemple.fr" required>
+        </div>
+        <div class="field">
+          <label for="tel">Téléphone</label>
+          <input type="tel" id="tel" name="Téléphone" placeholder="06 12 34 56 78" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="field">
+          <label for="naissance">Date de naissance</label>
+          <input type="date" id="naissance" name="Date de naissance" required>
+        </div>
+        <div class="field">
+          <label for="urgence-nom">Contact d'urgence <span class="opt">(nom)</span></label>
+          <input type="text" id="urgence-nom" name="Contact urgence - nom" placeholder="Nom et prénom" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="urgence-tel">Téléphone du contact d'urgence</label>
+        <input type="tel" id="urgence-tel" name="Contact urgence - téléphone" placeholder="06 12 34 56 78" required>
+      </div>
+
+      <div class="field field-check">
+        <input type="checkbox" id="accept" name="Règlement accepté" value="Oui" required>
+        <label for="accept">Je certifie être apte physiquement à cette épreuve, j'ai pris connaissance du règlement de MARCHE OU CRÈVE et j'accepte d'y participer à mes propres risques.</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-large btn-full" id="submit-btn">Valider mon inscription</button>
+
+      <p class="form-note">Les places sont attribuées par ordre d'arrivée. Une confirmation vous sera envoyée par e-mail.</p>
+
+      <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="logo logo-small">MARCHE<span class="logo-bar">/</span>CRÈVE</span>
+    <p class="footer-text">Première édition — 28 novembre 2026 — Forêt de Chevreuse (78). Avancer, ou sortir.</p>
+    <p class="footer-contact">Contact : contact@monsieurperformance.fr</p>
+  </div>
+</footer>
+
+<script src="js/inscription.js"></script>
+</body>
+</html>

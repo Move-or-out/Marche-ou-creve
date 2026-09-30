@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MARCHE OU CRÈVE — 28.11.2026 — Course d'endurance 24h sans arrêt</title>
+<meta name="description" content="MARCHE OU CRÈVE : une boucle de 2km. 24h maximum. Une seule règle — s'arrêter, c'est être éliminé. Première édition le 28 novembre 2026, forêt de Chevreuse (78). 20 places maximum.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@700;900&family=Anton&family=Barlow+Condensed:ital,wght@0,400;0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#top" class="logo">MARCHE<span class="logo-bar">/</span>CRÈVE</a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#concept">Le concept</a>
+      <a href="#format">Format</a>
+      <a href="#regles">Règles</a>
+      <a href="#infos">Infos</a>
+    </nav>
+    <a href="inscription.html" class="btn btn-nav">S'inscrire</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-stripes" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">PREMIÈRE ÉDITION — 28.11.2026</p>
+      <h1 class="hero-title">
+        <span class="line">MARCHE</span>
+        <span class="line line-out">OU CRÈVE</span>
+      </h1>
+      <p class="hero-sub">Une boucle de <strong>2&nbsp;km</strong>. <strong>24&nbsp;heures</strong> maximum. Une seule règle : <strong>s'arrêter d'avancer, c'est être éliminé.</strong></p>
+
+      <div class="hero-actions">
+        <a href="inscription.html" class="btn btn-primary">S'inscrire au combat</a>
+        <a href="#regles" class="btn btn-ghost">Voir le règlement</a>
+      </div>
+
+      <div class="countdown" aria-label="Compte à rebours avant le départ">
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-days">--</span>
+          <span class="countdown-label">Jours</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-hours">--</span>
+          <span class="countdown-label">Heures</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-minutes">--</span>
+          <span class="countdown-label">Min</span>
+        </div>
+        <div class="countdown-sep">:</div>
+        <div class="countdown-item">
+          <span class="countdown-num" id="cd-seconds">--</span>
+          <span class="countdown-label">Sec</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tampon signature -->
+    <div class="stamp" aria-hidden="true">
+      <div class="stamp-ring">
+        <span>ÉLIMINATION</span>
+        <span class="stamp-center">IMMÉDIATE</span>
+        <span>EN CAS D'ARRÊT</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BANDE CHIFFRES ============ -->
+  <section class="stats-bar">
+    <div class="stat">
+      <span class="stat-num">2</span>
+      <span class="stat-unit">KM</span>
+      <span class="stat-label">par boucle</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">24</span>
+      <span class="stat-unit">H</span>
+      <span class="stat-label">durée maximale</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">20</span>
+      <span class="stat-unit">&nbsp;</span>
+      <span class="stat-label">places maximum</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num">28.11</span>
+      <span class="stat-unit">2026</span>
+      <span class="stat-label">jour J</span>
+    </div>
+  </section>
+
+  <!-- ============ CONCEPT ============ -->
+  <section id="concept" class="section concept">
+    <p class="section-eyebrow">Le concept</p>
+    <h2 class="section-title">Avancer. Toujours. Ou sortir.</h2>
+    <p class="section-lead">
+      MARCHE OU CRÈVE n'est pas une course d'endurance comme les autres. Pas de temps de passage à battre,
+      pas de chrono à optimiser. Une seule obligation, permanente, du premier au dernier mètre :
+      <strong>rester en mouvement.</strong> Marcher, courir, trottiner — peu importe le rythme,
+      tant que le corps avance sur la boucle. Le jour où vous vous arrêtez, votre course s'arrête aussi.
+    </p>
+
+    <div class="rule-cards">
+      <article class="rule-card">
+        <span class="rule-icon" aria-hidden="true">⬤</span>
+        <h3>Boucle unique</h3>
+        <p>2&nbsp;km à parcourir en continu, encore, et encore, jusqu'à la limite des 24&nbsp;heures.</p>
+      </article>
+      <article class="rule-card rule-card-alert">
+        <span class="rule-icon" aria-hidden="true">✕</span>
+        <h3>Zéro arrêt</h3>
+        <p>S'arrêter d'avancer — même quelques secondes — signifie l'élimination immédiate de la course.</p>
+      </article>
+      <article class="rule-card">
+        <span class="rule-icon" aria-hidden="true">◷</span>
+        <h3>24h maximum</h3>
+        <p>Le dernier concurrent encore en mouvement à l'issue des 24&nbsp;heures remporte l'édition.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ FORMAT / DÉROULÉ ============ -->
+  <section id="format" class="section format">
+    <p class="section-eyebrow">Déroulé</p>
+    <h2 class="section-title">Le jour du départ</h2>
+
+    <ol class="timeline">
+      <li class="timeline-step">
+        <span class="step-num">01</span>
+        <div class="step-body">
+          <h3>Arrivée &amp; enregistrement</h3>
+          <p>Contrôle du dossard, du matériel obligatoire et briefing sécurité avant la mise en boucle.</p>
+        </div>
+      </li>
+      <li class="timeline-step">
+        <span class="step-num">02</span>
+        <div class="step-body">
+          <h3>Briefing des règles</h3>
+          <p>Rappel de la règle unique et des zones de ravitaillement disposées le long de la boucle de 2&nbsp;km.</p>
+        </div>
+      </li>
+      <li class="timeline-step">
+        <span class="step-num">03</span>
+        <div class="step-body">
+          <h3>Départ — 10h00</h3>
+          <p>Le chrono démarre. Chaque concurrent s'engage sur la boucle et ne doit plus interrompre sa progression.</p>
+        </div>
+      </li>
+      <li class="timeline-step">
+        <span class="step-num">04</span>
+        <div class="step-body">
+          <h3>24h de boucle continue</h3>
+          <p>Jour, nuit, fatigue, météo : la boucle ne change pas. Ceux qui s'arrêtent sortent de la course.</p>
+        </div>
+      </li>
+      <li class="timeline-step">
+        <span class="step-num">05</span>
+        <div class="step-body">
+          <h3>Sortie de course</h3>
+          <p>À la 24e heure ou dès qu'il ne reste qu'un concurrent en mouvement, la course prend fin.</p>
+        </div>
+      </li>
+    </ol>
+  </section>
+
+  <!-- ============ RÈGLEMENT ============ -->
+  <section id="regles" class="section regles">
+    <p class="section-eyebrow">Règlement</p>
+    <h2 class="section-title">Une règle. Aucune exception.</h2>
+
+    <div class="regles-grid">
+      <div class="regle-block">
+        <h3>Ce qui est autorisé</h3>
+        <ul>
+          <li>Marcher, trottiner, courir — à votre rythme, tant que vous avancez.</li>
+          <li>Manger et boire en mouvement, sur la boucle.</li>
+          <li>Changer d'allure autant de fois que nécessaire.</li>
+        </ul>
+      </div>
+      <div class="regle-block regle-block-alert">
+        <h3>Ce qui élimine</h3>
+        <ul>
+          <li>S'arrêter d'avancer, quelle qu'en soit la raison.</li>
+          <li>Sortir de la boucle sans repartir immédiatement.</li>
+          <li>Être assisté physiquement pour progresser.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="regles-note">Un règlement complet (matériel obligatoire, ravitaillement, encadrement médical, conditions d'abandon volontaire) sera communiqué aux inscrits avant l'épreuve.</p>
+  </section>
+
+  <!-- ============ INFOS PRATIQUES ============ -->
+  <section id="infos" class="section infos">
+    <p class="section-eyebrow">Infos pratiques</p>
+    <h2 class="section-title">Rendez-vous le 28 novembre 2026</h2>
+
+    <div class="infos-grid">
+      <div class="info-item">
+        <span class="info-label">Date</span>
+        <span class="info-value">28.11.2026 — départ à 10h00</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Lieu</span>
+        <span class="info-value">Forêt de Chevreuse (78)</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Format</span>
+        <span class="info-value">Boucle de 2 km — 24h maximum</span>
+      </div>
+      <div class="info-item">
+        <span class="info-label">Places</span>
+        <span class="info-value">20 participants maximum</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INSCRIPTION ============ -->
+  <section id="inscription" class="section inscription">
+    <div class="inscription-box">
+      <p class="section-eyebrow section-eyebrow-light">Engagement</p>
+      <h2 class="inscription-title">Prêt à ne plus vous arrêter ?</h2>
+      <p class="inscription-sub">20 places seulement. L'inscription vaut acceptation du règlement de la course.</p>
+      <a href="inscription.html" class="btn btn-primary btn-large">Je m'inscris à MARCHE OU CRÈVE</a>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <span class="logo logo-small">MARCHE<span class="logo-bar">/</span>CRÈVE</span>
+    <p class="footer-text">Première édition — 28 novembre 2026 — Forêt de Chevreuse (78). Avancer, ou sortir.</p>
+    <p class="footer-contact">Contact : contact@monsieurperformance.fr</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
